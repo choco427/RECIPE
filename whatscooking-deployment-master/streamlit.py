@@ -31,10 +31,6 @@ def main():
     st.markdown("# *What's Cooking? :cooking:*")
 
     st.markdown(
-        "An ML powered app by Jack Leitch <a href='https://github.com/jackmleitch/whatscooking-deployment' > <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/600px-Octicons-mark-github.svg.png' width='20' height='20' > </a> ",
-        unsafe_allow_html=True,
-    )
-    st.markdown(
         "## Given a list of ingredients, what different recipes can I can make? :tomato: "
     )
     st.markdown(
@@ -116,24 +112,6 @@ def main():
                 col2.markdown(f"* {ingred}")
             # st.write(f"Score: {selection_details.score.values[0]}")
 
-    # sidebar stuff
-    with st.sidebar.beta_expander("How it works?", expanded=True):
-        st.markdown("## How it works? :thought_balloon:")
-        st.write(
-            "For an in depth overview of the ML methods used and how I created this app, three blog posts are below."
-        )
-        blog1 = "https://jackmleitch.medium.com/using-beautifulsoup-to-help-make-beautiful-soups-d2670a1d1d52"
-        blog2 = "https://towardsdatascience.com/building-a-recipe-recommendation-api-using-scikit-learn-nltk-docker-flask-and-heroku-bfc6c4bdd2d4"
-        blog3 = "https://towardsdatascience.com/building-a-recipe-recommendation-system-297c229dda7b"
-        st.markdown(
-            f"1. [Web Scraping Cooking Data With Beautiful Soup]({blog1})"
-        )
-        st.markdown(
-            f"2. [Building a Recipe Recommendation API using Scikit-Learn, NLTK, Docker, Flask, and Heroku]({blog2})"
-        )
-        st.markdown(
-            f"3. [Building a Recipe Recommendation System Using Word2Vec, Scikit-Learn, and Streamlit]({blog3})"
-        )
 
 
 if __name__ == "__main__":
